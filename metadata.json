@@ -1,0 +1,6 @@
+{
+  "name": "ColorDNA: Personal Color Analysis",
+  "description": "AI-powered personal color consulting tool that analyzes your face photo to find your perfect color palette, seasonal type, and styling recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

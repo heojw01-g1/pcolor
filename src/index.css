@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Apple SD Gothic Neo", "Malgun Gothic", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-bg-primary: #FAF9F6;
+  --color-text-primary: #1F1F1F;
+  --color-text-secondary: #6B7280;
+  
+  --color-spring: #FF9AA2;
+  --color-summer: #B5EAD7;
+  --color-autumn: #E2BC91;
+  --color-winter: #C7CEEA;
+  --color-accent: #E2BC91;
+  
+  --color-brand-warm-bg: #FFF4E5;
+  --color-brand-warm-text: #D97706;
+  --color-brand-cool-bg: #E0F2FE;
+  --color-brand-cool-text: #0284C7;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary font-sans antialiased;
+  }
+}
+
+.sleek-card {
+  @apply bg-white border border-[#F3F4F6] rounded-[20px] p-6 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)];
+}
+
+.analysis-item {
+  @apply bg-[#F3F4F6] p-4 rounded-xl flex flex-col gap-1;
+}
+
+.color-chip {
+  @apply h-16 rounded-xl relative overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.05)];
+}
+
+.color-chip-info {
+  @apply absolute bottom-0 left-0 right-0 bg-white/80 p-1 px-2 text-[9px] font-medium;
+}
+
+.style-tip-box {
+  @apply bg-[#FFFBEB] border-l-4 border-[#FBBF24] p-4 rounded-r-xl mt-4 text-xs leading-relaxed;
+}
